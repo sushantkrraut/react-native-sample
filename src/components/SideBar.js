@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Content, Text, List, ListItem } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
-const routes = ['Home', 'Student Details', 'Google Maps', 'Camera', 'Bottom Navigator'];
+const routes = ['Home', 'Student Details', 'Google Maps', 'Camera', 'Bottom Navigator', 'Localization'];
 export default class SideBar extends React.Component {
 
     // constructor(props) {
@@ -30,6 +30,9 @@ export default class SideBar extends React.Component {
                 break;
             case 'Bottom Navigator':
                 Actions.addNavigator();
+                break;
+                case 'Localization':
+                Actions.localization();
                 break;
             default:
                 Actions.registerStudent();

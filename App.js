@@ -9,6 +9,7 @@ import StudentDetails from './src/components/StudentDetails';
 import GMaps from './src/components/GMaps';
 import Cam from './src/components/Cam';
 import AddNavigator from './src/components/AddNavigator';
+import Localization from './src/components/Localization';
 
 import { appReducer } from './src/reducers';
 
@@ -26,7 +27,8 @@ const Scenes = Actions.create(
         <Scene key='mapLocation' component={ShowMap} title="Current Location" />
         <Scene key='gMaps' component={GMaps} title="Google Maps" />
         <Scene key='cam' component={Cam} title="Camera" />
-        <Scene key='addNavigator' component={AddNavigator} title="AddNavigator" />
+        <Scene key='addNavigator' component={AddNavigator} title="Bottom Navigator" />
+        <Scene key='localization' component={Localization} title="Localization" />
     </Scene>
 );
 const ConnectedRouter = connect()(Router);
